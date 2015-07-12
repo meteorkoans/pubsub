@@ -1,0 +1,23 @@
+<head>
+  <title>pubsub demo</title>
+</head>
+
+<body>
+  {{> itemFilter}}
+  {{> itemList}}
+</body>
+
+<template name="itemFilter">
+  <div>
+      <input type="text" />
+  </div>
+</template>
+
+<template name="itemList">
+<ul>
+  {{#each items}}
+  <li>{{name}} | {{category}}</li>
+  {{/each}}
+</ul>
+</template>
+
